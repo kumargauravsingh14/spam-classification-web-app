@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container" align = "center">
+		<div id="brandname">
+			Machine Learning App with Flask
+		</div>
+		<h2>Spam Detector For SMS Messages</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container" align = "center">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter the message that is to be checked</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="20" cols="100" placeholder="Enter the message here..."></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="Spam or Not">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

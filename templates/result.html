@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	<script>
+		function goBack() {
+  		window.history.back()
+		}
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<div class="container" align = "center">
+		<div id="brandname" align = "center">
+			Machine Learning App with Flask
+		</div>
+		<h2>Spam Detector For SMS Messages</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Result for the message</b></p>
+	<div class="results" align = "center">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Not a Spam</h2>
+	{% endif %}
+
+	<p align = "center">
+	<button onclick="goBack()" class="buttonBg">Got another message to check</button>
+	</p>
+
+	</div>
+
+</body>
+</html>
