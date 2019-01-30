@@ -1,6 +1,6 @@
 # spam-sms-classification
 
-In this project, we model a classifier to label a given piece of text as a `spam` or `not a spam`. Also, we created an API for the model, using Flask, the Python micro framework for building web applications. 
+In this project, we model a classifier to label a given piece of text as `spam` or `not a spam`. Also, we created an API for the model, using Flask, the Python micro framework for building web applications. 
 The model is currently being hosted on herokuapp server - [here](https://spamsmsclassifier.herokuapp.com/)
 
 ## Dataset
